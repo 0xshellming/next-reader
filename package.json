@@ -35,7 +35,7 @@
     "url": "https://github.com/unriddle-ai/lector/issues"
   },
   "homepage": "https://github.com/unriddle-ai/lector",
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.1.0",
   "dependencies": {
     "husky": "^9.1.7",
     "semantic-release": "^24.2.0"

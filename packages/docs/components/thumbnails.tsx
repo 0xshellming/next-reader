@@ -20,13 +20,13 @@ import "@/lib/setup";
 
 const fileUrl = "/pdf/pathways.pdf";
 
-const WithThumbnails = () => {
+export const WithThumbnails = (props: { fileUrl: string }) => {
   const [showThumbnails, setShowThumbnails] = useState(true);
 
   return (
     <Root
-      fileURL={fileUrl}
-      className='bg-gray-100 border rounded-md overflow-hidden relative h-[700px] flex flex-col justify-stretch'
+      fileURL={props.fileUrl}
+      className='bg-gray-100 h-screen w-full rounded-md overflow-hidden relative flex flex-col justify-stretch'
       loader={<div className='p-4'>Loading...</div>}>
       <div className='bg-gray-100 border-b p-1 flex items-center justify-center text-sm text-gray-600 gap-2'>
         <button
